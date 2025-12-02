@@ -1,0 +1,516 @@
+/* COLORS */
+:root {
+    --green-light: #00D8BD;
+    --green-dark: #007666;
+    --green-deep: #018B4B;
+    --grid-bg: #083D1F;
+    --text-white: #ffffff;
+}
+
+/* BACKGROUND GRID */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: #011b11;
+    overflow-x: hidden;
+}
+
+.grid-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(0,255,200,0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,255,200,0.2) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 120px 20px 60px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.4;
+}
+
+.hero h2 span {
+    color: var(--green-light);
+}
+
+.hero p {
+    margin-top: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #b6d1c8;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    padding: 12px 28px;
+    border-radius: 6px;
+    background: var(--green-light);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #00c4aa;
+    transform: translateY(-2px);
+}
+
+/* BILLING TOGGLE */
+.billing-toggle {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.toggle-btn {
+    padding: 10px 25px;
+    background: #003d33;
+    color: white;
+    border: 1px solid var(--green-light);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+.toggle-btn:last-child {
+    border-radius: 0 6px 6px 0;
+}
+
+.toggle-btn.active {
+    background: var(--green-light);
+    color: black;
+}
+
+/* PRICING SECTION */
+/* PRICING SECTION - UPDATED WITH BLURRY BACKGROUND */
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    width: 280px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 216, 189, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.pricing-card h2 {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--green-light);
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pricing-card h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.pricing-card > p:first-of-type {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.price {
+    font-size: 32px;
+    color: var(--green-light);
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.price span {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.pricing-card li {
+    padding: 8px 0;
+    color: #ffffff;
+    position: relative;
+    padding-left: 25px;
+    opacity: 0.9;
+}
+
+.pricing-card li:before {
+    content: "✓";
+    color: var(--green-light);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.pricing-btn {
+    margin-top: 15px;
+    padding: 12px 18px;
+    width: 100%;
+    border: none;
+    background: var(--green-light);
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.pricing-btn:hover {
+    background: #00c4aa;
+}
+
+.pricing-card > p:last-of-type {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+/* SUPPORT SECTION */
+.support-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.support-border {
+    width: 95%;
+    max-width: 1200px;
+    border: 2px solid var(--green-light);
+    padding: 40px;
+    border-radius: 10px;
+    background: rgba(8, 61, 31, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.support-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.support-title span {
+    color: var(--green-light);
+}
+
+.support-subtitle {
+    text-align: center;
+    max-width: 650px;
+    margin: 10px auto 40px;
+    color: #c7e3dd;
+    line-height: 1.6;
+}
+
+.support-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.support-item {
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.support-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 216, 189, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.support-item img {
+    margin-bottom: 15px;
+    filter: brightness(0) saturate(100%) invert(67%) sepia(91%) saturate(374%) hue-rotate(123deg) brightness(98%) contrast(101%);
+    opacity: 1;
+}
+
+.support-item h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.support-item p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+/* PRICING TABLE STYLES - UPDATED */
+/* PRICING TABLE STYLES - UPDATED FOR CONSISTENT DESIGN */
+/* PRICING TABLE STYLES - UPDATED */
+.pricing-table-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--green-light);
+}
+
+.table-header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px 20px;
+    text-align: center;
+    color: #f0f8ff;
+    border-bottom: 1px solid var(--green-light);
+}
+
+.table-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.table-header p {
+    font-size: 16px;
+    color: #b3d1c9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+}
+
+/* Header rows */
+.plan-names-row th {
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--green-light);
+    border-right: 1px solid var(--green-light);
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.plan-names-row th:last-child {
+    border-right: none;
+}
+
+.plan-prices-row th {
+    padding: 15px 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--green-light);
+    border-right: 1px solid var(--green-light);
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.plan-prices-row th:last-child {
+    border-right: none;
+}
+
+.feature-header {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left: 20px !important;
+    font-size: 16px;
+    font-weight: normal;
+    width: 40%;
+    border-right: 1px solid var(--green-light);
+}
+
+.plan-column {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 10px !important;
+    width: 20%;
+    border-right: 1px solid var(--green-light);
+}
+
+.plan-column:last-child {
+    border-right: none;
+}
+
+.plan-column .plan-name {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.plan-column .plan-price {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+/* Section rows - UPDATED with teal color and larger font */
+.section-row td {
+    text-align: left;
+    padding: 18px 20px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid var(--green-light);
+    border-right: 1px solid var(--green-light);
+    font-weight: normal;
+    color: var(--green-light);
+}
+
+.section-row td:last-child {
+    border-right: none;
+}
+
+.section-title {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--green-light);
+}
+
+.section-empty {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Feature rows */
+.feature-name {
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 14px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-right: 1px solid var(--green-light);
+    border-bottom: 1px solid var(--green-light);
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.feature-value {
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-right: 1px solid var(--green-light);
+    border-bottom: 1px solid var(--green-light);
+    font-weight: normal;
+}
+
+.feature-value:last-child {
+    border-right: none;
+}
+
+.feature-value.price-text {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.feature-value.check::before {
+    content: '✓';
+    font-size: 16px;
+    color: var(--green-light);
+    display: block;
+    font-weight: normal;
+}
+
+/* Remove bottom border from last row */
+.pricing-table tbody tr:last-child .feature-name,
+.pricing-table tbody tr:last-child .feature-value {
+    border-bottom: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #b6d1c8;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .support-table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pricing-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .support-table {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h2 {
+        font-size: 24px;
+    }
+    
+    .pricing-table-container {
+        overflow-x: auto;
+    }
+    
+    .pricing-table {
+        min-width: 700px;
+    }
+}
