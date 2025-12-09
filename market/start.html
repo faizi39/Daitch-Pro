@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Product - Dark Teal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Container 1: Images Only -->
+    <div class="card images-card">
+      <div class="gallery-section">
+        <div class="main-image-wrap">
+          <img id="mainImage" src="AI.png" alt="AI Product Main" class="main-image">
+        </div>
+        <div class="thumbs">
+          <button class="thumb active" data-src="AI.png">
+            <img src="AI.png" alt="AI Product 1">
+          </button>
+          <button class="thumb" data-src="AI.png">
+            <img src="AI.png" alt="AI Product 2">
+          </button>
+          <button class="thumb" data-src="AI.png">
+            <img src="AI.png" alt="AI Product 3">
+          </button>
+          <button class="thumb" data-src="AI.png">
+            <img src="AI.png" alt="AI Product 4">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container 2: Prompts & Workflow Info -->
+    <div class="card info-card">
+      <div class="info-header">
+        <div class="info-left">
+          <div class="tag">Prompts & Workflows</div>
+          <h1 class="product-title">Advanced ChatGPT Prompts Pack</h1>
+          <div class="seller-stack">
+            <div class="seller-name">by AI Innovators</div>
+            <div class="rating">⭐ 4.9 <span class="muted">(234 reviews)</span></div>
+          </div>
+          <div class="sales-inline">
+            <span class="muted">1,234 sales</span>
+          </div>
+        </div>
+        <div class="info-right">
+          <button class="icon-like" title="like">♡</button>
+          <button class="icon-share" title="share">⤴</button>
+        </div>
+      </div>
+      <div class="sales-divider"></div>
+    </div>
+
+    <!-- Container 3: Price & Purchase -->
+    <div class="card price-card">
+      <div class="price-block">
+        <div class="price-left">
+          <div class="price">$49</div>
+          <div class="price-sub muted">one time</div>
+        </div>
+        <div class="purchase">
+          <button class="btn btn-primary btn-buy">Buy Now</button>
+          <button class="btn btn-ghost btn-sandbox">Try in Secure Sandbox</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container 4: Tabs Section -->
+    <div class="card tabs-section">
+      <div class="tabs">
+        <button class="tab active" data-tab="reviews">Reviews <span class="muted">(234)</span></button>
+        <button class="tab" data-tab="changelog">Changelog</button>
+      </div>
+      <!-- Payment options moved into Container 4 -->
+      <ul class="bullet-list">
+        <li>Secure, encrypted delivery</li>
+        <li>14 day money back guarantee</li>
+        <li>Lifetime updates included</li>
+      </ul>
+      <!-- Affiliate section moved into Container 4 -->
+      <div class="affiliate">
+        <label class="muted">Get Affiliate Link</label>
+        <div class="affiliate-box">
+          <input id="affInput" type="text" readonly value="https://daitchpro.com/ref/yourcode">
+          <button class="btn btn-small" id="copyBtn">Copy</button>
+        </div>
+        <div class="affiliate-note muted">Earn 10–20% commission on every sale through your unique link.</div>
+      </div>
+      <div class="tab-panels">
+        <div class="panel hidden" id="changelog">
+          <h3>Changelog</h3>
+          <p class="muted">Version history and updates.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container 5: Overview (separate container) -->
+    <div class="card overview-card">
+      <div class="panel" id="overview">
+        <h3>Product Description</h3>
+        <p>This advanced AI prompts pack helps teams and creators get consistent, high quality outputs from large language models. It includes templates, usage notes and example workflows.</p>
+        <h4>Key Features</h4>
+        <ul>
+          <li>Advanced AI capabilities powered by GPT models</li>
+          <li>Easy integration with existing systems</li>
+          <li>Comprehensive documentation and use cases</li>
+          <li>Regular updates and improvements</li>
+        </ul>
+        <h4>What is Included</h4>
+        <ul>
+          <li>Prompt files and examples</li>
+          <li>Setup and installation guide</li>
+          <li>API examples and demo link</li>
+          <li>License certificate</li>
+        </ul>
+        <div class="demo-link">
+          <a href="#" target="_blank">View Live Demo @</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container 6: Voice Agent -->
+    <div class="card voice-card">
+      <div class="voice-title">💬 AI Voice Agent</div>
+      <div class="muted">Ask question about this product</div>
+      <button class="btn btn-gradient btn-wide">Start Voice Chat</button>
+      <div class="voice-note muted">Get instant answers using DaitchPro AI Voice Agent technology</div>
+    </div>
+
+    <!-- Container 7: License Details -->
+    <div class="card license-card">
+      <h4>Licencse Deatails</h4>
+      <ul class="license-list">
+        <li>Licence Type :</li>
+        <li>Use in Projects :</li>
+        <li>Updates :</li>
+        <li>Support :</li>
+      </ul>
+    </div>
+
+    <!-- Container 8: Seller Info -->
+    <div class="card seller-card">
+      <div class="seller-top">
+        <div class="seller-avatar">AI</div>
+        <div class="seller-info">
+          <div class="seller-name">AI Innovators</div>
+          <div class="seller-sub muted">⭐ 4.9 seller rating</div>
+        </div>
+      </div>
+      <ul class="seller-list">
+        <li>Products : <span class="value">23</span></li>
+        <li>Sales : <span class="value">5,432</span></li>
+        <li>Member since : <span class="value">Jan 2024</span></li>
+      </ul>
+      <br>
+      <button class="btn-outline btn-wide-soft">Contact Seller</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
